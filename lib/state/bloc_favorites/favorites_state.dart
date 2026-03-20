@@ -1,6 +1,4 @@
 // state/bloc_favorites/favorites_state.dart
-// Estado imutável do BLoC — mesmo padrão do CounterState do projeto base.
-
 import '../../domain/entities/product.dart';
 
 class FavoritesBlocState {
@@ -9,10 +7,9 @@ class FavoritesBlocState {
 
   FavoritesBlocState({required this.products, this.showFavoritesOnly = false});
 
-  List<Product> get displayed =>
-      showFavoritesOnly
-          ? products.where((p) => p.favorite).toList()
-          : List.unmodifiable(products);
+  List<Product> get displayed => showFavoritesOnly
+      ? products.where((p) => p.favorite).toList()
+      : List.unmodifiable(products);
 
   int get favoriteCount => products.where((p) => p.favorite).length;
 }

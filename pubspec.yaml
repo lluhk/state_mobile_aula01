@@ -1,5 +1,5 @@
-name: state_mobile_aula01
-description: Atividade 05 - Gerenciamento de Estado com Provider, Riverpod e BLoC.
+name: mobile_arquitetura_02
+description: Aplicação Flutter com arquitetura em camadas, cache, tratamento de erros e gerenciamento de estado (Atividade 05).
 
 publish_to: 'none'
 version: 1.0.0+1
@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^1.2.0
+  cached_network_image: ^3.3.1
   provider: ^6.1.2
   flutter_riverpod: ^2.5.1
   flutter_bloc: ^8.1.3

@@ -1,14 +1,28 @@
 // domain/entities/product.dart
-// Modelo de produto conforme o enunciado da Atividade 05.
+// Entidade de domínio — representa um produto da FakeStore API.
+// O campo [favorite] é mutável pois representa uma preferência local do usuário,
+// não um dado vindo da API.
 
 class Product {
-  final String name;
+  final int id;
+  final String title;
   final double price;
+  final String description;
+  final String category;
+  final String imageUrl;
+  final double ratingRate;
+  final int ratingCount;
   bool favorite;
 
   Product({
-    required this.name,
+    required this.id,
+    required this.title,
     required this.price,
+    required this.description,
+    required this.category,
+    required this.imageUrl,
+    required this.ratingRate,
+    required this.ratingCount,
     this.favorite = false,
   });
 }
